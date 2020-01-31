@@ -8,11 +8,20 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
     [SerializeField] Player player;
     public bool detectingPlayer = false;
 
+    public Vector2 recommendedDirection; // direction to followPlayer
+
     // Start is called before the first frame update
     void Start()
     {
         // terribly slow code
         player = GameObject.FindObjectOfType<Player>();
+    }
+
+    private void Update()
+    {
+        if (detectingPlayer) {
+            recommendedDirection = player.transform.position - transform.position;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
