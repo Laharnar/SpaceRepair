@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+SpaceRepair/Library/
+SpaceRepair/Logs/
+SpaceRepair/Temp/
