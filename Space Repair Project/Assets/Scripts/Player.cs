@@ -4,13 +4,32 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    internal static Player player;
+    static GameObject _player;
+    static Player _Player;
+    public static Player PlayerSc {
+        get { return _Player; }
+    }
+
+    internal static GameObject playerGo {
+        get {
+            if (_player != null) return _player.gameObject;
+            else
+            {
+                _player = new GameObject("temp player");
+            }
+            return _player;
+        }
+        set {
+            _player = value;
+        }
+    }
     public InteractionInput input;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        player = this;
+        _Player = this;
+        playerGo = this.gameObject;
     }
 
 }

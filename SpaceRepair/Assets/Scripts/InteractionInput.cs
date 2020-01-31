@@ -27,9 +27,10 @@ public class InteractionInput:MonoBehaviour {
         // filter
         for (int i = 0; i < itemsInRange.Count; i++)
         {
-            if(itemsInRange[i].behaviour.itemTag == "Door")
+            if (itemsInRange[i].behaviour.itemTag == "Door")
+            {
                 itemsInRange[i].behaviour.OnInteractionActivated();
-
+            }
         }
 
     }

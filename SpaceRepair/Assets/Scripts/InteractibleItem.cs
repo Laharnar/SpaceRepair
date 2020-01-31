@@ -4,7 +4,6 @@
 public class InteractibleItem:MonoBehaviour {
     // Put on doors, characters etc.
     public Interaction behaviour;
-    public string itemTag;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
