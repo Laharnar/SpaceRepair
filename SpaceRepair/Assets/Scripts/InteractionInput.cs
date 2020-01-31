@@ -21,8 +21,16 @@ public class InteractionInput:MonoBehaviour {
         {
             for (int i = 0; i < itemsInRange.Count; i++)
             {
-                itemsInRange[0].behaviour.OnInteractionActivated();
+                itemsInRange[i].behaviour.OnInteractionActivated();
             }
         }
+        // filter
+        for (int i = 0; i < itemsInRange.Count; i++)
+        {
+            if(itemsInRange[i].behaviour.itemTag == "Door")
+                itemsInRange[i].behaviour.OnInteractionActivated();
+
+        }
+
     }
 }
