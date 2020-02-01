@@ -6,7 +6,7 @@ using UnityEngine;
 public class FireBullets : MonoBehaviour
 {
     public float fireRate = 1f;
-    public Transform bulletPrefab;
+    public Bullet bulletPrefab;
     public Transform spawnPoint;
     public Vector2 targetDirection;
 
@@ -26,11 +26,12 @@ public class FireBullets : MonoBehaviour
             else
             {
                 yield return new WaitForSeconds(fireRate);
-                Transform t = Instantiate(
+                Bullet t = Instantiate(
                     bulletPrefab,
                     spawnPoint.transform.position, 
                     Quaternion.Euler(targetDirection));
-                t.right = targetDirection;
+                
+                t.direction = targetDirection;
             }
         }
     }

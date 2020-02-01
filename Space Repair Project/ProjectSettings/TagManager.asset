@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: AboveGround
+    uniqueID: 3066765907
+    locked: 0
+  - name: Bullets
+    uniqueID: 214481225
+    locked: 0
