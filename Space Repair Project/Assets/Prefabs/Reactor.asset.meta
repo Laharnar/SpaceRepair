@@ -1,12 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Space Repair Project/Assets/Art/Animations/Player.controller.meta
-guid: 25c6406c17d9a4b4390c893da8224f85
-=======
-guid: c4309fb5abe515f43bc1418a6786e446
->>>>>>> 887c090bfb5630c2ed2a92f3ac4b799cc7517d39:Space Repair Project/Assets/Prefabs/Reactor.asset.meta
+guid: 2519182e9c71e5f44a47dc609d644d27
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 9100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

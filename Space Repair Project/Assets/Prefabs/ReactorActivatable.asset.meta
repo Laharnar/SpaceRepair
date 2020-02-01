@@ -1,12 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Space Repair Project/Assets/Art/Player/Materials/Frame6.mat.meta
-guid: b95d867eca3b57f4ba99afa7b55d4acc
-=======
-guid: 193f9150eaab0334ba79a1e20011e7cc
->>>>>>> 887c090bfb5630c2ed2a92f3ac4b799cc7517d39:Space Repair Project/Assets/Prefabs/ReactorActivatable.asset.meta
+guid: 5e090e33f59085341958695a1d56dd17
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
