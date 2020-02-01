@@ -382,16 +382,8 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1500484666, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
-      propertyPath: closeDistance
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500484666, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
-      propertyPath: loseDistance
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500484666, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
-      propertyPath: moveSpeed
+    - target: {fileID: 921071959, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2869603648263194451, guid: 3b762b13884d8c048a39b0696c2e1103,
@@ -448,11 +440,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2869603648263194458, guid: 3b762b13884d8c048a39b0696c2e1103,
-        type: 3}
-      propertyPath: returnSpeed
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2869603648263194459, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
