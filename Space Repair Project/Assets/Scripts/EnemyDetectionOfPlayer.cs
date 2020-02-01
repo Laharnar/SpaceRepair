@@ -29,6 +29,12 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
         if (detectingPlayer) {
             recommendedDirection = Player.playerGo.transform.position - transform.position;
         }
+        if (detectingPlayer)
+        {
+            GetComponent<FlowMachine>().enabled = false;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            Debug.Log("disablan flow");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
