@@ -30,7 +30,7 @@ public class FireBullets : MonoBehaviour
                     bulletPrefab,
                     spawnPoint.transform.position, 
                     Quaternion.Euler(targetDirection));
-                t.up = targetDirection;
+                t.right = targetDirection;
             }
         }
     }
