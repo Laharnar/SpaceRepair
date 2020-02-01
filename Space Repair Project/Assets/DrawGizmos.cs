@@ -17,6 +17,6 @@ public class DrawGizmos : MonoBehaviour
     }
 
     private void OnDrawGizmos() {
-        Gizmos.DrawWireSphere(transform.position + new Vector3(1, 0, 0), 1f);
+        Gizmos.DrawWireSphere(transform.position + new Vector3 (1,0,0), 1f);
     }
 }
