@@ -10,5 +10,6 @@ public class LightPickup : Interaction {
     {
         hasLight.value = true;
         Player.PlayerSc.light.Invoke("LoseLight", timeOut);
+        Player.PlayerSc.light.StartCoroutine(Player.PlayerSc.light.SlowCountdownTimer(timeOut));
     }
 }

@@ -39,19 +39,8 @@ public class InteractibleItem:MonoBehaviour {
     {
         if(collision.transform.root.gameObject == Player.playerGo)
         {
-            if (automaticallyInteractWhenInRange)
-            {
-                behaviour.OnInteractionActivated(inputSource);
-            }
-            else
-            {
-                somethingCanInteract = false;
-                inputSource.OnItemExitRange(this);
-            }
-            if (consumeOnInteraction)
-            {
-                Destroy(gameObject);
-            }
+            somethingCanInteract = false;
+            inputSource.OnItemExitRange(this);
         }
     }
 
