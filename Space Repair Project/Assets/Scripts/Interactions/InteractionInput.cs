@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class InteractionInput:MonoBehaviour {
     [SerializeField] KeyCode interactionKey;
 
@@ -22,7 +23,12 @@ public class InteractionInput:MonoBehaviour {
         {
             for (int i = 0; i < itemsInRange.Count; i++)
             {
-                itemsInRange[i].behaviour.OnInteractionActivated(this);
+                if(itemsInRange[i].useBehaviour)
+                    itemsInRange[i].behaviour.OnInteractionActivated(this);
+                else
+                {
+                    itemsInRange[i].Activate(this);
+                }
             }
         }
     }

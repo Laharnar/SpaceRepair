@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 1
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3279353923296880701, guid: 6991e63d0c54e4a4ebd79db34c25b4ef,
+    type: 3}
   spawnPoint: {fileID: 7622225846165589971}
   targetDirection: {x: 0, y: 1}
 --- !u!1 &7622225846165589970

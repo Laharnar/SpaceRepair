@@ -40,7 +40,7 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
         if (detectingPlayer) {
             recommendedDirection = Player.playerGo.transform.position - transform.position;
             whereUnitIsGoing = recommendedDirection;
-            
+            //GetComponent<Rigidbody2D>().velocity = whereUnitIsGoing;
         }
     }
 
