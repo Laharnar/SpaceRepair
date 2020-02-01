@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
             if (_player != null) return _player.gameObject;
             else
             {
+                Debug.Log("Temp player created");
                 _player = new GameObject("temp player");
             }
             return _player;
