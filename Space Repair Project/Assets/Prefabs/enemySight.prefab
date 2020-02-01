@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 448095008}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: enemy Cone rotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,6 +415,7 @@ GameObject:
   - component: {fileID: 2869603648263194457}
   - component: {fileID: 2869603648263194458}
   - component: {fileID: 2869603648263194456}
+  - component: {fileID: 921071959}
   m_Layer: 0
   m_Name: enemySight
   m_TagString: Untagged
@@ -550,8 +551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5975ecd9755e5d47bb720548b7afb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detection: {fileID: 448095008}
-  whereUnitIsGoing: {x: 0, y: 0, z: 0}
   detectingPlayer: 0
   recommendedDirection: {x: 0, y: 0}
 --- !u!60 &2869603648263194456
@@ -651,6 +650,23 @@ PolygonCollider2D:
       - {x: -0.2265625, y: -0.4453125}
       - {x: -0.21875, y: -0.45703125}
       - {x: -0.21484375, y: -0.44921875}
+--- !u!114 &921071959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2869603648263194459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17ed163454caf946bd10f249ce48399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detection: {fileID: 448095008}
+  rotateConstantlyBy: {x: 0, y: 0, z: 0.5}
+  pingPong: 0
+  goingLeft: 1
+  offsetAngle: 90
 --- !u!1 &5900023286085290500
 GameObject:
   m_ObjectHideFlags: 0
