@@ -26,16 +26,17 @@ public class InteractibleItem:MonoBehaviour {
             if (automaticallyInteractWhenInRange)
             {
                 behaviour.OnInteractionActivated(inputSource);
+                if (consumeOnInteraction)
+                {
+                    Destroy(gameObject);
+                }
             }
             else
             {
                 somethingCanInteract = true;
                 inputSource.OnItemEnterRange(this);
             }
-            if (consumeOnInteraction)
-            {
-                Destroy(gameObject);
-            }
+            
         }
     }
 
