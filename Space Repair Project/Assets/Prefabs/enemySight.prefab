@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448095007}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2094500739}
   m_Father: {fileID: 2869603648263194451}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &451469556
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 2869603648263194458}
   - component: {fileID: 2869603648263194456}
   - component: {fileID: 921071959}
+  - component: {fileID: 1500484666}
   m_Layer: 0
   m_Name: enemySight
   m_TagString: Untagged
@@ -499,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":0.25,"$type":"System.Single"},"$version":"A"},{"name":"directionOfPlayer","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"playerDir","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":0.8,"$type":"System.Single"},"$version":"A"},{"name":"directionOfPlayer","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"playerDir","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 2869603648263194458}
 --- !u!114 &2869603648263194454
@@ -553,6 +554,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectingPlayer: 0
   recommendedDirection: {x: 0, y: 0}
+  lastKnownPosition: {x: 0, y: 0}
+  followAi: {fileID: 1500484666}
+  returnSpeed: 5
+  maxRand: 10
 --- !u!60 &2869603648263194456
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -657,7 +662,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2869603648263194459}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f17ed163454caf946bd10f249ce48399, type: 3}
   m_Name: 
@@ -667,6 +672,28 @@ MonoBehaviour:
   pingPong: 0
   goingLeft: 1
   offsetAngle: 90
+  offsetMinus: 0
+  offsetPlus: 0
+--- !u!114 &1500484666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2869603648263194459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a3606f3090d6d48b41ac63ede6fe4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  closeDistance: 0.7
+  loseDistance: 40
+  detection: {fileID: 2869603648263194458}
+  slerpValue: 0.1
+  tracking: 0
+  curDir: {x: 0, y: 0}
+  rig: {fileID: 2869603648263194457}
 --- !u!1 &5900023286085290500
 GameObject:
   m_ObjectHideFlags: 0
