@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 2327488928231739162}
   - component: {fileID: 2111727577}
   - component: {fileID: 2111727578}
+  - component: {fileID: 1923968484}
   m_Layer: 0
   m_Name: DummyPlayer
   m_TagString: Untagged
@@ -845,3 +846,16 @@ MonoBehaviour:
   lightSmall: {fileID: 1197932149}
   lightIsOn: {fileID: 11400000, guid: 1a450efbd8c05494da43fc9c1590fbd1, type: 2}
   timer: {fileID: 11400000, guid: e787736783fc65b4d853be0618a945ed, type: 2}
+--- !u!114 &1923968484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327488928231739167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27746dd7391204044a5d218721b35266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 4000

@@ -17,7 +17,6 @@ public class EnemyDetectionRotateConstantly : MonoBehaviour {
         
         detection.Rotate(
             goingLeft ? rotateConstantlyBy : -rotateConstantlyBy);
-        Debug.Log(detection.eulerAngles.z);
         if (detection.eulerAngles.z > 175+ offsetAngle+offsetPlus)
         {
             goingLeft = false;

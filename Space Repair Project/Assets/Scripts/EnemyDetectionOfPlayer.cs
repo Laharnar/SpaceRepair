@@ -1,4 +1,5 @@
 ﻿using Bolt;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,7 +8,10 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
     public bool detectingPlayer = false;
 
     public Vector2 recommendedDirection; // direction to followPlayer
-    
+    public Vector2 lastKnownPosition;
+    public EnemyFollow followAi;
+    public float returnSpeed = 0.8f;
+    public float maxRand = 10;
 
     private void OnDrawGizmos()
     {
@@ -28,13 +32,37 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
     {
         if (detectingPlayer) {
             recommendedDirection = Player.playerGo.transform.position - transform.position;
+
+            // special ai, follows player
+            FlowMachine mf = GetComponent<FlowMachine>();
+            if (mf.enabled)
+            {
+                GetComponent<FlowMachine>().enabled = false;
+                lastKnownPosition = transform.position;
+                followAi.OnDetectEnemy(Player.playerGo.transform);
+            }
+            followAi.OnDetectingEnemy(Player.playerGo.transform);
         }
-        if (detectingPlayer)
+    }
+
+    IEnumerator MoveTo(Vector2 pos)
+    {
+        GetComponent<Rigidbody2D>().velocity = ((Vector3)pos - transform.position).normalized * returnSpeed;
+        while (Vector2.Distance(pos, transform.position) > 1f)
         {
-            GetComponent<FlowMachine>().enabled = false;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            Debug.Log("disablan flow");
+            yield return null;
         }
+        GetComponent<FlowMachine>().enabled = true;
+        if (Vector3.Distance(transform.position, pos) > 10)
+        {
+            lastKnownPosition = transform.position;
+        }
+    }
+
+    public void Return()
+    {
+        Vector3 v = transform.position +( (Vector3)lastKnownPosition - transform.position).normalized*UnityEngine.Random.Range(((Vector3)lastKnownPosition-transform.position).magnitude, maxRand);
+        StartCoroutine(MoveTo(v));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
