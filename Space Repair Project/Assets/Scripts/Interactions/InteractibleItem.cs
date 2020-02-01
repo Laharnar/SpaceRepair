@@ -6,6 +6,8 @@ public class InteractibleItem:MonoBehaviour {
     public Interaction behaviour;
     InteractionInput inputSource;
     public bool somethingCanInteract = false;
+    public bool automaticallyInteractWhenInRange = false;
+    public bool consumeOnInteraction = false;
 
     private void Start()
     {
@@ -17,9 +19,19 @@ public class InteractibleItem:MonoBehaviour {
     {
         if (collision.transform.root.gameObject == Player.playerGo)
         {
-            Debug.Log("test");
-            somethingCanInteract = true;
-            inputSource.OnItemEnterRange(this);
+            if (automaticallyInteractWhenInRange)
+            {
+                behaviour.OnInteractionActivated(inputSource);
+            }
+            else
+            {
+                somethingCanInteract = true;
+                inputSource.OnItemEnterRange(this);
+            }
+            if (consumeOnInteraction)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -27,8 +39,19 @@ public class InteractibleItem:MonoBehaviour {
     {
         if(collision.transform.root.gameObject == Player.playerGo)
         {
-            somethingCanInteract = false;
-            inputSource.OnItemExitRange(this);
+            if (automaticallyInteractWhenInRange)
+            {
+                behaviour.OnInteractionActivated(inputSource);
+            }
+            else
+            {
+                somethingCanInteract = false;
+                inputSource.OnItemExitRange(this);
+            }
+            if (consumeOnInteraction)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     static GameObject _player;
     static Player _Player;
+
     public static Player PlayerSc {
         get { return _Player; }
     }
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
         }
     }
     public InteractionInput input;
+    public new PlayerLight light;
 
     // Start is called before the first frame update
     void Awake()

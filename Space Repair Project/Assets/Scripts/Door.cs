@@ -1,9 +1,12 @@
 ﻿using System;
 using UnityEngine;
 
+
+
 [CreateAssetMenu]
 public class Door : Interaction {
-    public override void OnInteractionActivated()
+
+    public override void OnInteractionActivated(InteractionInput source)
     {
         Open();
     }

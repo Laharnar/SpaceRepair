@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionInput:MonoBehaviour {
@@ -21,7 +22,7 @@ public class InteractionInput:MonoBehaviour {
         {
             for (int i = 0; i < itemsInRange.Count; i++)
             {
-                itemsInRange[0].behaviour.OnInteractionActivated();
+                itemsInRange[i].behaviour.OnInteractionActivated(this);
             }
         }
     }
