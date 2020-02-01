@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< .merge_file_a01600
 guid: c4309fb5abe515f43bc1418a6786e446
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
+=======
+guid: 2519182e9c71e5f44a47dc609d644d27
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>> .merge_file_a11280
   userData: 
   assetBundleName: 
   assetBundleVariant: 
