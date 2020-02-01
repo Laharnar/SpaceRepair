@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":4,"$type":"System.Int32"},"$version":"A"},{"name":"inputX","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"inputY","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"cantMoveX","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"cantMove","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":12,"$type":"System.Int32"},"$version":"A"},{"name":"inputX","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"inputY","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"cantMoveX","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"cantMove","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &7184467848123213227
 MonoBehaviour:

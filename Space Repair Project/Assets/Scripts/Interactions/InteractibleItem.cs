@@ -1,13 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(CircleCollider2D))]
 public class InteractibleItem:MonoBehaviour {
+
     // Put on doors, characters etc.
     public Interaction behaviour;
     InteractionInput inputSource;
     public bool somethingCanInteract = false;
     public bool automaticallyInteractWhenInRange = false;
     public bool consumeOnInteraction = false;
+    public bool useBehaviour = true;
+    public Action<object> onActivateLocally;
 
     private void Start()
     {
@@ -32,6 +36,14 @@ public class InteractibleItem:MonoBehaviour {
             {
                 Destroy(gameObject);
             }
+        }
+    }
+
+    internal void Activate(object src)
+    {
+        if (onActivateLocally!= null)
+        {
+            onActivateLocally(src);
         }
     }
 
