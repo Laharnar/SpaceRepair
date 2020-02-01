@@ -329,7 +329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &241835591
 Rigidbody2D:
   serializedVersion: 4
@@ -1233,7 +1233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &936404486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5153,8 +5153,8 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -5186,6 +5186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c3ce66bea4183348b25df0336f384de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  viewPortFactor: 0.5
+  followDuration: 0.1
+  maximumFollowSpeed: 10
+  player: {fileID: 1110768868}
 --- !u!1 &1752521241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5201,7 +5205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1752521242
 Transform:
   m_ObjectHideFlags: 0
@@ -5229,6 +5233,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622225845411530865, guid: 3a8532bd140a0494cac3a57c3567c3b5,
+        type: 3}
+      propertyPath: fireRate
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622225845411530865, guid: 3a8532bd140a0494cac3a57c3567c3b5,
+        type: 3}
+      propertyPath: targetDirection.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622225845411530865, guid: 3a8532bd140a0494cac3a57c3567c3b5,
+        type: 3}
+      propertyPath: targetDirection.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7622225845411530866, guid: 3a8532bd140a0494cac3a57c3567c3b5,
         type: 3}
@@ -5284,6 +5303,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622225846165589971, guid: 3a8532bd140a0494cac3a57c3567c3b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622225846165589971, guid: 3a8532bd140a0494cac3a57c3567c3b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8532bd140a0494cac3a57c3567c3b5, type: 3}
@@ -5418,7 +5447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1835612015
 Rigidbody2D:
   serializedVersion: 4
@@ -5543,7 +5572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2000841147
 Transform:
   m_ObjectHideFlags: 0
