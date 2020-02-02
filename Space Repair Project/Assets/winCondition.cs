@@ -9,13 +9,15 @@ public class winCondition : MonoBehaviour
     [SerializeField] collection spodnji;
     [SerializeField] collection desni;
 
+    public bool winGame = false;
+
 
     // Update is called once per frame
     void Update()
     {
         if(levi.allActivated && desni.allActivated && spodnji.allActivated)
         {
-            Debug.Log("Game won");
+            winGame = true;
         }
     }
 }

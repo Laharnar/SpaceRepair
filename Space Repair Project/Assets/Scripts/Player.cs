@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     static GameObject _player;
     static Player _Player;
 
+    [SerializeField] winCondition condition;
+
     public static Player PlayerSc {
         get { return _Player; }
     }
@@ -36,6 +38,14 @@ public class Player : MonoBehaviour
         if(life==null)life = GetComponent<AlienInteractions>();
         _Player = this;
         playerGo = this.gameObject;
+    }
+
+    private void Update()
+    {
+        if (condition.winGame)
+        {
+            won = true;
+        }
     }
 
 }
