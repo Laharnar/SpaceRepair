@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class SoundLibrary:MonoBehaviour {
+
     public static SoundLibrary lib;
 
     public SoundClipData[] clips;

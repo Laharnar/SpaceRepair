@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class PlaySound : MonoBehaviour
 {
-
+    public float playInDistToPlayer = 10;
     AudioSource a;
     public SoundPlay playSound;
 
@@ -18,6 +18,15 @@ public class PlaySound : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.U))
             PlaySoundFx(playSound);
+        if (Player.playerGo != null)
+        {
+            a.volume = 1 - (Mathf.Clamp(Vector2.Distance(transform.position, Player.playerGo.transform.position), 0, playInDistToPlayer) / playInDistToPlayer);
+            a.volume *= a.volume/2;
+        }
+        else
+        {
+            a.volume = 0;
+        }
     }
 
     public void PlaySoundFx()
@@ -27,8 +36,8 @@ public class PlaySound : MonoBehaviour
 
     public void PlaySoundFx(SoundPlay sound)
     {
-        //a.clip = SoundLibrary.lib.GetSoundClip(sound);
-        //Debug.Log("Playing "+a.clip );
-        //a.Play();
+        a.clip = SoundLibrary.lib.GetSoundClip(sound);
+        Debug.Log("Playing "+a.clip );
+        a.Play();
     }
 }

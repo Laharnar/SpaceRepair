@@ -11,5 +11,6 @@
     TypingTextEfekt2,
     ZakljucekSoundZaTV,
     Unused,
-    BackgroundMusic
+    BackgroundMusic,
+    AlienZNogami
 }
