@@ -29,7 +29,7 @@ public class FireBullets : MonoBehaviour
                 Bullet t = Instantiate(
                     bulletPrefab,
                     spawnPoint.transform.position, 
-                    Quaternion.Euler(targetDirection));
+                    spawnPoint.transform.rotation);
                 
                 t.direction = targetDirection;
             }

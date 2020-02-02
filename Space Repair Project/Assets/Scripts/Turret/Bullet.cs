@@ -6,7 +6,7 @@ public class Bullet:MonoBehaviour {
 
     private void Update()
     {
-        transform.Translate(new Vector3(direction.x, direction.y, 0)*Time.deltaTime*bulletSpeed.value);
+        transform.Translate(-Vector2.right*Time.deltaTime*bulletSpeed.value);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,6 +22,7 @@ public class Bullet:MonoBehaviour {
         if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
+            Debug.Log("Uniči se na zidu");
         }
     }
 }
