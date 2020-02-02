@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6705471326797562801}
   - component: {fileID: 6705471326797562806}
   - component: {fileID: 6705471326797562807}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6705471327142801771}
   - component: {fileID: 6705471327142801770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6705471327269925655}
   - component: {fileID: 6705471327269925654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6705471327335591681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmallLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6705471327657867287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 6705471327682732656}
   - component: {fileID: 6705471327682732662}
   - component: {fileID: 6705471327682732657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InteractiblesDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 6705471327927079913}
   - component: {fileID: 6705471327927079918}
   - component: {fileID: 6705471327927079919}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: TimerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6705471328228877691}
   - component: {fileID: 6705471328228877690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6705471328340804005}
   - component: {fileID: 6705471328340804004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lightsmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 6705471328696578628}
   - component: {fileID: 6705471328696578630}
   - component: {fileID: 6705471328696578631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +765,7 @@ GameObject:
   - component: {fileID: 6705471328702873275}
   - component: {fileID: 6705471328702873273}
   - component: {fileID: 6705471328702873272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player (1)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -945,7 +945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6705471328794491240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BigLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

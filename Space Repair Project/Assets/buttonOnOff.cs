@@ -28,6 +28,7 @@ public class buttonOnOff : MonoBehaviour
             child.gameObject.SetActive(false);
             GetComponent<Collider2D>().enabled = false;
             activated = true;
+            gameObject.GetComponent<Collider2D>().enabled = false;
         }
     }
 }
