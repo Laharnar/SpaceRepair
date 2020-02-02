@@ -65,8 +65,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1228201389
-  m_SortingLayer: 1
+  m_SortingLayerID: -1484495287
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9bd50e01f884631459287f09f389152e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -241,8 +241,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1228201389
-  m_SortingLayer: 1
+  m_SortingLayerID: -1484495287
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 85946c09347614b449c3a0d47053d3b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -320,8 +320,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1484495287
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d489c1c443998574b959760bd2080928, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -343,7 +343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6211025332302551969}
-  - component: {fileID: 6211025332302551970}
+  - component: {fileID: 7861091571667192482}
   m_Layer: 17
   m_Name: GameObject
   m_TagString: Untagged
@@ -368,8 +368,8 @@ Transform:
   m_Father: {fileID: 6211025330851729124}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &6211025332302551970
-PolygonCollider2D:
+--- !u!70 &7861091571667192482
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -381,64 +381,6 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.0866666, y: 3.0866666}
-    newSize: {x: 4.63, y: 4.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.93666667, y: -1.2366667}
-      - {x: 1.0166667, y: -1.1433333}
-      - {x: 1.2833334, y: -1.1566666}
-      - {x: 1.3966666, y: -1.0833334}
-      - {x: 1.3966666, y: 0.96333337}
-      - {x: 1.39, y: 1.3366667}
-      - {x: 1.3833333, y: 1.3766667}
-      - {x: 1.3033334, y: 1.45}
-      - {x: -0.06333333, y: 1.45}
-      - {x: -0.09666667, y: 1.4433334}
-      - {x: -0.15666667, y: 1.4233334}
-      - {x: -0.21666667, y: 1.3366667}
-      - {x: -0.23666668, y: 1.2033334}
-      - {x: -0.34333333, y: 1.1833334}
-      - {x: -0.56333333, y: 1.1166667}
-      - {x: -0.72333336, y: 1.0166667}
-      - {x: -0.77000004, y: 0.96333337}
-      - {x: -0.7966667, y: 0.87}
-      - {x: -0.7966667, y: 0.6766667}
-      - {x: -1.2433333, y: 0.69666666}
-      - {x: -1.33, y: 0.59000003}
-      - {x: -1.33, y: -1.0366668}
-      - {x: -1.3233334, y: -1.0633334}
-      - {x: -1.2900001, y: -1.1033334}
-      - {x: -1.2166667, y: -1.1366667}
-      - {x: -0.97, y: -1.1366667}
-      - {x: -0.9166667, y: -1.1166667}
-      - {x: -0.86333334, y: -1.2366667}
-      - {x: -0.78333336, y: -1.3166667}
-      - {x: -0.6433334, y: -1.3966666}
-      - {x: -0.49, y: -1.4566667}
-      - {x: -0.18333334, y: -1.51}
-      - {x: 0.22333334, y: -1.51}
-      - {x: 0.37666667, y: -1.49}
-      - {x: 0.60333335, y: -1.4366667}
-      - {x: 0.80333334, y: -1.3566667}
-    - - {x: -0.85, y: 0.13666667}
-      - {x: -0.84333336, y: 0.14333333}
-      - {x: -0.81, y: -0.8966667}
-      - {x: -0.80333334, y: -0.9566667}
-      - {x: -0.8566667, y: -1.0033333}
-      - {x: -0.8566667, y: -1.0166667}
-      - {x: -0.85, y: -1.0166667}
-    - - {x: 0.87666667, y: -0.9566667}
-      - {x: 0.87666667, y: 0.4766667}
-      - {x: 0.8966667, y: 0.57}
-      - {x: 0.9166667, y: 0.55}
-      - {x: 0.92333335, y: -1.0166667}
-      - {x: 0.93, y: -1.01}
+  m_Offset: {x: 0.017399082, y: -0.49148965}
+  m_Size: {x: 2.6227667, y: 1.6398021}
+  m_Direction: 1

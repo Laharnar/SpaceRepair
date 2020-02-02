@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6380019991146207573}
   - component: {fileID: 6380019991146207572}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: buttonPressed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: b422de254e8343e4cac1c3ed756e8c2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6380019991708266152}
   - component: {fileID: 6380019991708266155}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: buttonNOTpressed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,9 +144,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1228201389
+  m_SortingLayer: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 47b6028630758b94b98b3dc29215115a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 6380019991838691903}
   - component: {fileID: 6380019991838691900}
   - component: {fileID: 6380019991838691901}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd575265c7db5a64f87feacbf652d97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
 --- !u!114 &6380019991838691901
 MonoBehaviour:
   m_ObjectHideFlags: 0
