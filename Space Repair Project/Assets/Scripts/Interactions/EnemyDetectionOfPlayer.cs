@@ -47,6 +47,8 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
     IEnumerator MoveTo(Vector2 pos)
     {
         GetComponent<Rigidbody2D>().velocity = ((Vector3)pos - transform.position).normalized * returnSpeed;
+        GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
+
         float start = Time.time;
         while (Vector2.Distance(pos, transform.position) > 1f && Time.time < start+3)
         {

@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     }
     public InteractionInput input;
     public new PlayerLight light;
+    public AlienInteractions life;
 
     // Start is called before the first frame update
     void Awake()
