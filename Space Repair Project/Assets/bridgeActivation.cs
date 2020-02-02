@@ -18,7 +18,6 @@ public class bridgeActivation : MonoBehaviour
         if(activatingButton.activated)
         {
             openBridge.gameObject.SetActive(false);
-            GetComponent<Collider2D>().enabled = false;
         }
     }
 }

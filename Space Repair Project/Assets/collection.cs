@@ -7,7 +7,7 @@ public class collection : MonoBehaviour
     [SerializeField] List<buttonOnOff> buttonsThatNeedToBeActive;
     private int buttonNum;
 
-    [SerializeField] bool allActivated;
+    [SerializeField] public bool allActivated;
     
     // Start is called before the first frame update
     void Start()
