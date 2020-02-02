@@ -8,6 +8,8 @@ public class MoviePlayer : MonoBehaviour
     public bool externallyTriggerVideo = false;
     public bool playOnStart = false;
     public VideoPlayer movie;
+    public bool disableOnDone=false;
+    public float vidLen=45;
 
     private void Start()
     {
@@ -20,6 +22,10 @@ public class MoviePlayer : MonoBehaviour
 
     void Update()
     {
+        if (disableOnDone && Time.time > vidLen)
+        {
+            movie.targetCamera = null;
+        }
         if (testMode && Input.GetKeyDown(KeyCode.Space))
         {
             if (movie.isPlaying)

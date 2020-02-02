@@ -1129,6 +1129,21 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 893088590702637139, guid: b68a1d201d3a9704281f5c62796a4b61,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968479392685892447, guid: b68a1d201d3a9704281f5c62796a4b61,
+        type: 3}
+      propertyPath: disableOnDone
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968479392685892447, guid: b68a1d201d3a9704281f5c62796a4b61,
+        type: 3}
+      propertyPath: vidLen
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b68a1d201d3a9704281f5c62796a4b61, type: 3}
 --- !u!1 &375880332 stripped
