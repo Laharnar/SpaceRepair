@@ -11,6 +11,7 @@ public class MoviePlayer : MonoBehaviour
 
     private void Start()
     {
+        gameObject.GetComponent<VideoPlayer>().targetCamera = Camera.main;
         if (playOnStart)
         {
             externallyTriggerVideo = true;
@@ -39,6 +40,7 @@ public class MoviePlayer : MonoBehaviour
             }
             else
             {
+                Debug.Log("play");
                 movie.Play();
             }
         }

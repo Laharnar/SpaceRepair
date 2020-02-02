@@ -28,10 +28,12 @@ public class Player : MonoBehaviour
     public InteractionInput input;
     public new PlayerLight light;
     public AlienInteractions life;
+    public bool won;// for triggering videos and whatever
 
     // Start is called before the first frame update
     void Awake()
     {
+        if(life==null)life = GetComponent<AlienInteractions>();
         _Player = this;
         playerGo = this.gameObject;
     }

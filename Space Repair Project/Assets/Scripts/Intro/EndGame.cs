@@ -6,6 +6,8 @@ public class EndGame: MonoBehaviour {
     public MoviePlayer player1, player2;
     public Player player;
     public float waitAfterVideoLength = 11;
+    public bool expectLose = true;
+    public bool done = false;
 
     private void Start()
     {
@@ -14,21 +16,33 @@ public class EndGame: MonoBehaviour {
 
     private void Update()
     {
-        if (player == null || player.life.isDead || Input.GetKeyDown(KeyCode.Alpha0))
+        if (done) return;
+        if (expectLose)
         {
-            EndGameVids();
+            if (player == null || player.life.isDead || Input.GetKeyDown(KeyCode.Alpha0))
+            {
+                EndGameVids();
+            }
+        }
+        else
+        {
+            if (player != null && (player.won || Input.GetKeyDown(KeyCode.Alpha9)))
+            {
+                EndGameVids();
+            }
         }
     }
 
     public void EndGameVids()
     {
+        done = true;
         StartCoroutine(PlayEndVideos());
     }
 
     public IEnumerator PlayEndVideos()
     {
-        player1.externallyTriggerVideo = true;
+        if (player1) player1.externallyTriggerVideo = true;
         yield return new WaitForSeconds(waitAfterVideoLength);
-        player2.externallyTriggerVideo = true;
+        if(player2)player2.externallyTriggerVideo = true;
     }
 }
