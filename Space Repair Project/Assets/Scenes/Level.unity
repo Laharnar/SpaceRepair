@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4594,6 +4594,12 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.0917393}
   m_Size: {x: 0.7, y: 0.8165214}
   m_Direction: 0
+--- !u!1 &546285428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6705471328696578629, guid: 11cbcea61b0d82b4289ffd88f1b09f15,
+    type: 3}
+  m_PrefabInstance: {fileID: 1501750960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &761878496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9109,8 +9115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"collection":{"$content":[{"name":"playerAnim","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 546285428}
 --- !u!4 &2049265630
 Transform:
   m_ObjectHideFlags: 0

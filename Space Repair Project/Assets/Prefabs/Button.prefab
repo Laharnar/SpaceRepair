@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2786872105543809833}
   - component: {fileID: 2786872105543809830}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: buttonPressed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2786872106449210027}
   - component: {fileID: 2786872106449210024}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: buttonNOTpressed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 2786872106826903159}
   - component: {fileID: 2786872106826903158}
   - component: {fileID: 2786872106826903161}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
