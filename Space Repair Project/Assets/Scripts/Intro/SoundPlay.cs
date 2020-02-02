@@ -9,5 +9,7 @@
     IntroTurnOnTvEfekt,
     TypingTextEfekt,
     TypingTextEfekt2,
-    ZakljucekSoundZaTV
+    ZakljucekSoundZaTV,
+    Unused,
+    BackgroundMusic
 }

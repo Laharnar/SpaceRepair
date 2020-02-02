@@ -4,6 +4,10 @@ public class Bullet:MonoBehaviour {
     public FloatData bulletSpeed;
     public Vector2 direction = new Vector2();
 
+    private void Start()
+    {
+    }
+
     private void Update()
     {
         transform.Translate(-Vector2.right*Time.deltaTime*bulletSpeed.value);
