@@ -25,6 +25,11 @@ public class collection : MonoBehaviour
             if(!button.activated)
             {
                 allActivated = false;
+                aktivirajMene.SetActive(false);
+
+            }
+            if(button.activated)
+            {
                 aktivirajMene.SetActive(true);
             }
         }

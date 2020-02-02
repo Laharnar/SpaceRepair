@@ -23,6 +23,7 @@ public class EndGame: MonoBehaviour {
             if (player == null || player.life.isDead || Input.GetKeyDown(KeyCode.Alpha0))
             {
                 EndGameVids();
+
             }
         }
         else
