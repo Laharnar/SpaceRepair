@@ -56,13 +56,5 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: f55fe4a74edec494ebbb6113ac9ad625, type: 3}
   - soundId: 5
     clip: {fileID: 8300000, guid: e08920e1b81ab7e4094a79850448cf73, type: 3}
-  - soundId: 6
-    clip: {fileID: 8300000, guid: 10d3df456208a314381a0d4271f60e49, type: 3}
-  - soundId: 7
-    clip: {fileID: 8300000, guid: 805802bb30a945242887659472cbfaca, type: 3}
-  - soundId: 9
-    clip: {fileID: 8300000, guid: 20508527f19c46341959703e037d97bd, type: 3}
-  - soundId: 8
-    clip: {fileID: 8300000, guid: f6f41658e48d265478f422622c8b92b9, type: 3}
-  - soundId: 10
-    clip: {fileID: 8300000, guid: a370031b1f1641f449fca6d0eb44fe99, type: 3}
+  - soundId: 12
+    clip: {fileID: 8300000, guid: f5b7c2577bffb0c4c8c3de03065301bd, type: 3}
