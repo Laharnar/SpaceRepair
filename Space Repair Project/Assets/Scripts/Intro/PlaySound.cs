@@ -27,8 +27,8 @@ public class PlaySound : MonoBehaviour
 
     public void PlaySoundFx(SoundPlay sound)
     {
-        a.clip = SoundLibrary.lib.GetSoundClip(sound);
-        Debug.Log("Playing "+a.clip );
-        a.Play();
+        //a.clip = SoundLibrary.lib.GetSoundClip(sound);
+        //Debug.Log("Playing "+a.clip );
+        //a.Play();
     }
 }

@@ -35,7 +35,7 @@ public class FireBullets : MonoBehaviour
                 
                 t.direction = targetDirection;
 
-                sounds.PlaySoundFx();
+                if(sounds)sounds.PlaySoundFx();
             }
         }
     }
