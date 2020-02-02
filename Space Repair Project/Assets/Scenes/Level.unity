@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1113,6 +1113,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameIntroVid
+      objectReference: {fileID: 0}
+    - target: {fileID: 601484048640801959, guid: b68a1d201d3a9704281f5c62796a4b61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 893088590702637139, guid: b68a1d201d3a9704281f5c62796a4b61,
         type: 3}
@@ -10156,12 +10161,12 @@ PrefabInstance:
     - target: {fileID: 6705471328702873278, guid: 11cbcea61b0d82b4289ffd88f1b09f15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.97
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 6705471328702873278, guid: 11cbcea61b0d82b4289ffd88f1b09f15,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.03
+      value: 9.9
       objectReference: {fileID: 0}
     - target: {fileID: 6705471328702873278, guid: 11cbcea61b0d82b4289ffd88f1b09f15,
         type: 3}
@@ -10388,6 +10393,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3563204024138567990, guid: 10974dab74033ae4f97db4f6befb5633,
+        type: 3}
+      propertyPath: aktivirajMene
+      value: 
+      objectReference: {fileID: 268665894}
     - target: {fileID: 6362962783999906040, guid: 10974dab74033ae4f97db4f6befb5633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10618,6 +10628,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big boy
       objectReference: {fileID: 0}
+    - target: {fileID: 6163264849142921034, guid: 3b762b13884d8c048a39b0696c2e1103,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 75073a0f1092b024193f7913766201d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
 --- !u!1001 &1738600374
@@ -14364,6 +14379,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 724843515819711080, guid: 9d6fc315e80d8f941a5b1f106b6d7742,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1023210533281158812, guid: 9d6fc315e80d8f941a5b1f106b6d7742,
         type: 3}
       propertyPath: m_Name
@@ -14444,7 +14464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27746dd7391204044a5d218721b35266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 4
+  life: 1
 --- !u!4 &2042258679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6705471328702873278, guid: 11cbcea61b0d82b4289ffd88f1b09f15,
@@ -24117,7 +24137,7 @@ PrefabInstance:
     - target: {fileID: 4439352747887205670, guid: 275ad35d45ae19948979080105195c12,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4932270359927609306, guid: 275ad35d45ae19948979080105195c12,
         type: 3}
@@ -24132,7 +24152,7 @@ PrefabInstance:
     - target: {fileID: 6403798291137599541, guid: 275ad35d45ae19948979080105195c12,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7426714612964777470, guid: 275ad35d45ae19948979080105195c12,
         type: 3}
@@ -26252,7 +26272,7 @@ PrefabInstance:
     - target: {fileID: 7770960037372643077, guid: 275ad35d45ae19948979080105195c12,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7770960037372643077, guid: 275ad35d45ae19948979080105195c12,
         type: 3}
@@ -26262,7 +26282,7 @@ PrefabInstance:
     - target: {fileID: 7874412304685844195, guid: 275ad35d45ae19948979080105195c12,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8644620559080546060, guid: 275ad35d45ae19948979080105195c12,
         type: 3}

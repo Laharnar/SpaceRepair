@@ -20,7 +20,7 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
     private void Start()
     {
         playSound = GetComponent<PlaySound>();
-        playSound.PlaySoundFx();
+        //playSound.PlaySoundFx();
     }
 
     private void OnDrawGizmos()
