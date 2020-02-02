@@ -9,10 +9,16 @@ public class EnemyFollow :MonoBehaviour{
     public bool tracking = false;
     public Vector2 curDir;
     public Rigidbody2D rig;
+    Transform other;
 
-    public void OnDetectingEnemy(Transform other)
+    private void Update()
     {
-        if (!tracking) return;
+        if(tracking)
+            TrackingEnemy(other);
+    }
+
+    public void TrackingEnemy(Transform other)
+    {
         Debug.Log("tracking");
         Vector2 v = other.position - transform.position;
         //v = Vector3.Slerp(curDir, v, slerpValue);
@@ -21,7 +27,9 @@ public class EnemyFollow :MonoBehaviour{
         rig.velocity = (v).normalized * moveSpeed;
         if (v.magnitude < closeDistance)
         {
-            other.GetComponent<AlienInteractions>().CaughtByAlien(this);
+            AlienInteractions ai = other.GetComponent<AlienInteractions>();
+            if (ai) ai.CaughtByAlien(this);
+            else Debug.Log("AlienInteractions script is missing on player.");
             tracking = false;
             detection.Return();
         }
@@ -37,5 +45,6 @@ public class EnemyFollow :MonoBehaviour{
         //.
         tracking = true;
         curDir = transform.up;
+        this.other = other;
     }
 }

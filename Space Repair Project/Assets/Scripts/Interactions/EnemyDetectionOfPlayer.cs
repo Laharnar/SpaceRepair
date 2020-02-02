@@ -41,14 +41,14 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
                 lastKnownPosition = transform.position;
                 followAi.OnDetectEnemy(Player.playerGo.transform);
             }
-            followAi.OnDetectingEnemy(Player.playerGo.transform);
         }
     }
 
     IEnumerator MoveTo(Vector2 pos)
     {
         GetComponent<Rigidbody2D>().velocity = ((Vector3)pos - transform.position).normalized * returnSpeed;
-        while (Vector2.Distance(pos, transform.position) > 1f)
+        float start = Time.time;
+        while (Vector2.Distance(pos, transform.position) > 1f && Time.time < start+3)
         {
             yield return null;
         }
@@ -61,7 +61,8 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
 
     public void Return()
     {
-        Vector3 v = transform.position +( (Vector3)lastKnownPosition - transform.position).normalized*UnityEngine.Random.Range(((Vector3)lastKnownPosition-transform.position).magnitude, maxRand);
+        Vector3 v = transform.position +((Vector3)lastKnownPosition - transform.position).normalized
+            *UnityEngine.Random.Range(((Vector3)lastKnownPosition-transform.position).magnitude, maxRand);
         StartCoroutine(MoveTo(v));
     }
 
