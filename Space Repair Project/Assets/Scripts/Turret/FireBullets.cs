@@ -9,10 +9,12 @@ public class FireBullets : MonoBehaviour
     public Bullet bulletPrefab;
     public Transform spawnPoint;
     public Vector2 targetDirection;
+    PlaySound sounds;// Add play sounds na ta object.
 
     private void Start()
     {
         StartCoroutine(FiringLogic());
+        sounds = GetComponent<PlaySound>();
     }
 
     private IEnumerator FiringLogic()
@@ -32,6 +34,8 @@ public class FireBullets : MonoBehaviour
                     spawnPoint.transform.rotation);
                 
                 t.direction = targetDirection;
+
+                sounds.PlaySoundFx();
             }
         }
     }

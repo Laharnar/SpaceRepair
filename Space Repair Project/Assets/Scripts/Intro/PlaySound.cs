@@ -20,6 +20,11 @@ public class PlaySound : MonoBehaviour
             PlaySoundFx(playSound);
     }
 
+    public void PlaySoundFx()
+    {
+        PlaySoundFx(playSound);
+    }
+
     public void PlaySoundFx(SoundPlay sound)
     {
         a.clip = SoundLibrary.lib.GetSoundClip(sound);
