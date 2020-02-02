@@ -8,6 +8,7 @@ public class EndGame: MonoBehaviour {
     public float waitAfterVideoLength = 11;
     public bool expectLose = true;
     public bool done = false;
+    public Transform enableAfter;
 
     private void Start()
     {
@@ -44,5 +45,6 @@ public class EndGame: MonoBehaviour {
         if (player1) player1.externallyTriggerVideo = true;
         yield return new WaitForSeconds(waitAfterVideoLength);
         if(player2)player2.externallyTriggerVideo = true;
+
     }
 }

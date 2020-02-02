@@ -9,7 +9,7 @@ public class FireBullets : MonoBehaviour
     public Bullet bulletPrefab;
     public Transform spawnPoint;
     public Vector2 targetDirection;
-    PlaySound sounds;// Add play sounds na ta object.
+    PlaySound sounds; // Add play sounds na ta object.
 
     private void Start()
     {

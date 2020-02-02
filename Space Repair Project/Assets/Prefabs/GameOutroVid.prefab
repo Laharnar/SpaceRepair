@@ -40,7 +40,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5529090154401058976}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 12208171cb6bbc147a19388a085d52d5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 13337b8777eb3a74e827d76c03e97617, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -122,8 +122,8 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5787179064215943605}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a7b90f8a193e5d94dbd395a37c04af29, type: 3}
-  m_TargetCameraAlpha: 1
+  m_VideoClip: {fileID: 32900000, guid: 13337b8777eb3a74e827d76c03e97617, type: 3}
+  m_TargetCameraAlpha: 0.988
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
   m_TargetTexture: {fileID: 0}
@@ -141,7 +141,7 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
@@ -243,6 +243,7 @@ MonoBehaviour:
   player1: {fileID: 2626614936099030479}
   player2: {fileID: 245994641736526948}
   player: {fileID: 0}
-  waitAfterVideoLength: 5
+  waitAfterVideoLength: 11
   expectLose: 1
   done: 0
+  enableAfter: {fileID: 0}

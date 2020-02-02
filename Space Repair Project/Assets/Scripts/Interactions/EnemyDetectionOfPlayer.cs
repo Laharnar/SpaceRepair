@@ -3,6 +3,8 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+
+
 public class EnemyDetectionOfPlayer : MonoBehaviour
 {
     public bool detectingPlayer = false;
@@ -12,6 +14,14 @@ public class EnemyDetectionOfPlayer : MonoBehaviour
     public EnemyFollow followAi;
     public float returnSpeed = 0.8f;
     public float maxRand = 10;
+
+    PlaySound playSound;
+
+    private void Start()
+    {
+        playSound = GetComponent<PlaySound>();
+        playSound.PlaySoundFx();
+    }
 
     private void OnDrawGizmos()
     {
