@@ -8,7 +8,8 @@ public class collection : MonoBehaviour
     private int buttonNum;
 
     [SerializeField] public bool allActivated;
-    
+    [SerializeField] GameObject aktivirajMene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class collection : MonoBehaviour
             if(!button.activated)
             {
                 allActivated = false;
+                aktivirajMene.SetActive(true);
             }
         }
 
