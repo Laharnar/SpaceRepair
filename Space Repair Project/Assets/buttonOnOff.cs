@@ -5,6 +5,8 @@ using UnityEngine;
 public class buttonOnOff : MonoBehaviour
 {
     Transform child;
+    public bool activated;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class buttonOnOff : MonoBehaviour
             child = transform.GetChild(0);
             child.gameObject.SetActive(false);
             GetComponent<Collider2D>().enabled = false;
+            activated = true;
         }
     }
 }

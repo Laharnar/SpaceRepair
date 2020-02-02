@@ -15,6 +15,12 @@ public class Bullet:MonoBehaviour {
         if (collision.gameObject == Player.playerGo)
         {
             Debug.Log("Recieved dmg.");
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("Wall"))
+        {
             Destroy(gameObject);
         }
     }
