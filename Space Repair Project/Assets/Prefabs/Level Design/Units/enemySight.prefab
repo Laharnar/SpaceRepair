@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 921071959}
   - component: {fileID: 1500484666}
   - component: {fileID: 532907444}
-  - component: {fileID: 532907443}
+  - component: {fileID: 6163264849142921034}
   m_Layer: 0
   m_Name: enemySight
   m_TagString: Untagged
@@ -614,7 +614,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.0917393}
   m_Size: {x: 0.7, y: 0.8165214}
   m_Direction: 0
---- !u!95 &532907443
+--- !u!95 &6163264849142921034
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
