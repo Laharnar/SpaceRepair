@@ -6,18 +6,20 @@ public class bridgeActivation : MonoBehaviour
 {
     [SerializeField] buttonOnOff activatingButton;
     Transform openBridge;
-
+    [SerializeField] PlaySound sound;
 
     void Start()
     {
+        if(!sound) sound = GetComponent<PlaySound>();
         openBridge = transform.GetChild(0);
     }
 
     void Update()
     {
-        if(activatingButton.activated)
+        if(activatingButton.activated && openBridge.gameObject.activeSelf)
         {
             openBridge.gameObject.SetActive(false);
+            if (sound) sound.PlaySoundFx();
         }
     }
 }

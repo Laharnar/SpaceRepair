@@ -12,9 +12,11 @@ public class MoviePlayer : MonoBehaviour
     public float vidLen=45;
     public bool disableOnReload = false;
     public bool skipOnEsc = false;
+    public PlaySoundOnTimer sound;
 
-    private void Awake()
+    private void Start()
     {
+        if (sound == null) sound = GetComponent<PlaySoundOnTimer>();
         gameObject.GetComponent<VideoPlayer>().targetCamera = Camera.main;
         if (playOnStart)
         {
@@ -24,13 +26,15 @@ public class MoviePlayer : MonoBehaviour
 
     void Update()
     {
+        
         if (skipOnEsc && Input.GetKeyDown(KeyCode.Escape))
         {
             movie.Stop();
+            if (sound) sound.PlaySoundFx();
         }
         if (disableOnDone && Time.time > vidLen)
         {
-            movie.targetCamera = null;
+            //movie.targetCamera = null;
         }
         if (testMode && Input.GetKeyDown(KeyCode.Space))
         {
@@ -60,13 +64,14 @@ public class MoviePlayer : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        movie.targetCamera = Camera.main;
+        //movie.targetCamera = Camera.main;
 
         if (disableOnReload)
         {
             playOnStart = false;
-            movie.targetCamera = null;
+            //movie.targetCamera = null;
             externallyTriggerVideo = false;
+            if (sound) sound.Stop();
         }
     }
 }

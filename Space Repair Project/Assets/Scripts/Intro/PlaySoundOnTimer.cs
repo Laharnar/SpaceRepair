@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlaySoundOnTimer:MonoBehaviour {
 
@@ -13,6 +14,16 @@ public class PlaySoundOnTimer:MonoBehaviour {
     private void OnLevelWasLoaded(int level)
     {
         src.Stop();
-        src.Play();
+        //src.Play();
+    }
+
+    internal void PlaySoundFx()
+    {
+        if(src)src.Play();
+    }
+
+    internal void Stop()
+    {
+        if (src) src.Stop();
     }
 }

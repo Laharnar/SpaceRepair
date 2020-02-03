@@ -42,6 +42,7 @@ public class PlaySound : MonoBehaviour
     {
         a.clip = SoundLibrary.lib.GetSoundClip(sound);
         //Debug.Log("Playing "+a.clip );
-        a.Play();
+        if(!a.isPlaying)
+            a.Play();
     }
 }
