@@ -32,7 +32,7 @@ public class collection : MonoBehaviour
                 aktivirajMene.SetActive(true);
             }
         }
-        if (ok )
+        if (ok)
         {
             allActivated = true;
         }

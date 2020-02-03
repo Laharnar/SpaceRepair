@@ -17,6 +17,7 @@ public class winCondition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        percentageDone = 0;
         if (levi.allActivated)
             percentageDone = 0.33f;
         if (desni.allActivated)

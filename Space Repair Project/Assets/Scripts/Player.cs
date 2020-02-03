@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
             _player = value;
         }
     }
+
+    public static bool Lost { get => PlayerSc == null; }
+
     public InteractionInput input;
     public new PlayerLight light;
     public AlienInteractions life;

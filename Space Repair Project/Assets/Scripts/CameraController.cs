@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
     {
         viewPortSize = (cam.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height)) - cam.ScreenToWorldPoint(Vector2.zero)) * viewPortFactor;
 
-        distance = player.position - transform.position;
+        if(player)distance = player.position - transform.position;
         if(Mathf.Abs(distance.x) > viewPortSize.x /2){
             targetPosition.x = player.position.x - (viewPortSize.x / 2 * Mathf.Sign(distance.x));
         }

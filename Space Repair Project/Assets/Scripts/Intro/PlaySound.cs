@@ -22,7 +22,7 @@ public class PlaySound : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.U))
             PlaySoundFx(playSound);
-        if (Player.playerGo != null)
+        if (Player.playerGo != null && !Player.PlayerSc.won)
         {
             a.volume = 1 - (Mathf.Clamp(Vector2.Distance(transform.position, Player.playerGo.transform.position), 0, playInDistToPlayer) / playInDistToPlayer);
             a.volume *= a.volume/2;
@@ -41,7 +41,7 @@ public class PlaySound : MonoBehaviour
     public void PlaySoundFx(SoundPlay sound)
     {
         a.clip = SoundLibrary.lib.GetSoundClip(sound);
-        Debug.Log("Playing "+a.clip );
+        //Debug.Log("Playing "+a.clip );
         a.Play();
     }
 }

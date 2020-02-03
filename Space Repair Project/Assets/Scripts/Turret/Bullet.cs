@@ -26,7 +26,7 @@ public class Bullet:MonoBehaviour {
         if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
-            Debug.Log("Uniči se na zidu");
+            //Debug.Log("Uniči se na zidu");
         }
     }
 }

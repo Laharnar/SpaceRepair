@@ -6,14 +6,16 @@ public class PlayAnimation:MonoBehaviour {
     public bool setValue;
     public bool canBeAngry = false;
     public bool angryOnStart = false;
-    
-    
+    public bool rotateOnAngry = false;
+
+
 
     public void SetAngry()
     {
         if (canBeAngry)
         {
             animator.SetBool("Angry", true);
+            if(rotateOnAngry)
             gameObject.GetComponent<EnemyDetectionRotateConstantly>().enabled = true;
         }
     }

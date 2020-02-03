@@ -10,6 +10,8 @@ public class MoviePlayer : MonoBehaviour
     public VideoPlayer movie;
     public bool disableOnDone=false;
     public float vidLen=45;
+    public bool disableOnReload = false;
+    public bool skipOnEsc = false;
 
     private void Awake()
     {
@@ -22,6 +24,10 @@ public class MoviePlayer : MonoBehaviour
 
     void Update()
     {
+        if (skipOnEsc && Input.GetKeyDown(KeyCode.Escape))
+        {
+            movie.Stop();
+        }
         if (disableOnDone && Time.time > vidLen)
         {
             movie.targetCamera = null;
@@ -54,8 +60,13 @@ public class MoviePlayer : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        playOnStart = false;
-        movie.targetCamera = null;
-        externallyTriggerVideo = false;
+        movie.targetCamera = Camera.main;
+
+        if (disableOnReload)
+        {
+            playOnStart = false;
+            movie.targetCamera = null;
+            externallyTriggerVideo = false;
+        }
     }
 }
