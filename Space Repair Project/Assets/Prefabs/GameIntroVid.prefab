@@ -115,3 +115,6 @@ MonoBehaviour:
   movie: {fileID: 893088590702637139}
   disableOnDone: 0
   vidLen: 45
+  disableOnReload: 0
+  skipOnEsc: 0
+  sound: {fileID: 0}

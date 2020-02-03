@@ -39,6 +39,7 @@ public class EndGame: MonoBehaviour {
     {
         done = true;
         StartCoroutine(PlayEndVideos());
+        
     }
 
     public IEnumerator PlayEndVideos()

@@ -27,7 +27,7 @@ TagManager:
   - EnemyProjectiles
   - Reactor
   - Button
-  - 
+  - EnemySlime
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: AboveGround
     uniqueID: 3066765907
+    locked: 0
+  - name: Enemy
+    uniqueID: 1217320153
     locked: 0
   - name: Bullets
     uniqueID: 214481225

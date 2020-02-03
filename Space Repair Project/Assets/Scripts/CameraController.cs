@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour
     {
         cam = Camera.main;
         targetPosition = player.position;
-    }
+    }   
 
     // Update is called once per frame
     void Update()
