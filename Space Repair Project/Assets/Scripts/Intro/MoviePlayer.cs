@@ -11,7 +11,7 @@ public class MoviePlayer : MonoBehaviour
     public bool disableOnDone=false;
     public float vidLen=45;
 
-    private void Start()
+    private void Awake()
     {
         gameObject.GetComponent<VideoPlayer>().targetCamera = Camera.main;
         if (playOnStart)
@@ -46,9 +46,16 @@ public class MoviePlayer : MonoBehaviour
             }
             else
             {
-                Debug.Log("play");
+                //Debug.Log("play");
                 movie.Play();
             }
         }
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        playOnStart = false;
+        movie.targetCamera = null;
+        externallyTriggerVideo = false;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Reactor: InteractibleItem {
 
@@ -6,40 +7,49 @@ public class Reactor: InteractibleItem {
     public int state = 0;
 
     public bool activated;
-    public bool repaired = false;
     float lastActivatedTime;
-    public BoolData reactorActivateCondition;
+    // win conditions
+    public bool repaired = false;
+    public bool canBeFilled = false;
+    public bool isFilled;
+    public Image errorImage;
+    public winCondition buttonsProgress;
 
     private void Awake()
     {
         onActivateLocally += ReactorActivated;
         SetReactorVisuals(0);
     }
+    private void Update()
+    {
+        errorImage.fillAmount = 1-buttonsProgress.percentageDone;
+    }
 
     void ReactorActivated(object src)
     {
-        if (!reactorActivateCondition.value)
-        {
-            Debug.Log("Can't activate reactor.");
-            return;
-        }
         if (lastActivatedTime+1 >= Time.time)
         {
             return;
         }
         lastActivatedTime = Time.time;
         activated = true;
-        state++;
+
+        if (!repaired && state == 0)
+        {
+            state++;
+            repaired = true;
+        }
+        if (canBeFilled && state == 1)
+        {
+            state++;
+            isFilled = true;
+        }
 
         if (state == 3)
         {
             state = 2;
         }
         SetReactorVisuals(state);
-        if (state == 2)
-        {
-            repaired = true;
-        }
     }
 
     public void SetReactorVisuals(int id)

@@ -20,19 +20,21 @@ public class collection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        allActivated = true;
+        bool ok = true;
         foreach(buttonOnOff button in buttonsThatNeedToBeActive) {
             if(!button.activated)
             {
-                allActivated = false;
+                ok = false;
                 aktivirajMene.SetActive(false);
-
             }
             if(button.activated)
             {
                 aktivirajMene.SetActive(true);
             }
         }
-
+        if (ok )
+        {
+            allActivated = true;
+        }
     }
 }

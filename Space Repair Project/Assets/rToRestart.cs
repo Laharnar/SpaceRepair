@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class rToRestart : MonoBehaviour
 {
+    public BoolData restarted;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        if(restarted!= null)restarted.value = false;
+    }
+
     void Start()
     {
         
@@ -15,8 +21,9 @@ public class rToRestart : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene("Level");
-            }
+        {
+            if (restarted!= null)restarted.value = true;
+            SceneManager.LoadScene("Level");
+        }
     }
 }

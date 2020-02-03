@@ -2,17 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 [RequireComponent(typeof(AudioSource))]
 public class PlaySound : MonoBehaviour
 {
     public float playInDistToPlayer = 10;
     AudioSource a;
     public SoundPlay playSound;
+    public bool activateOnStart = false;
 
     private void Start()
     {
         a = GetComponent<AudioSource>();
+        if (activateOnStart)
+        {
+            PlaySoundFx(playSound);
+        }
     }
     private void Update()
     {
