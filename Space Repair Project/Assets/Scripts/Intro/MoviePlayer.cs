@@ -32,9 +32,11 @@ public class MoviePlayer : MonoBehaviour
             movie.Stop();
             if (sound) sound.PlaySoundFx();
         }
-        if (disableOnDone && Time.time > vidLen)
+        if (disableOnDone && Time.timeSinceLevelLoad > vidLen)
         {
             //movie.targetCamera = null;
+            if(!movie.isPlaying)
+                movie.Stop();
         }
         if (testMode && Input.GetKeyDown(KeyCode.Space))
         {
