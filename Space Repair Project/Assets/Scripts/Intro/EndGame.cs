@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndGame: MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class EndGame: MonoBehaviour {
     public bool expectLose = true;
     public bool done = false;
     public Transform enableAfter;
+    public Text msgGameObject;
 
     private void Start()
     {
@@ -31,6 +33,7 @@ public class EndGame: MonoBehaviour {
             if (player != null && (player.won || Input.GetKeyDown(KeyCode.Alpha9)))
             {
                 EndGameVids();
+
             }
         }
     }
@@ -39,14 +42,20 @@ public class EndGame: MonoBehaviour {
     {
         done = true;
         StartCoroutine(PlayEndVideos());
-        
+
     }
 
     public IEnumerator PlayEndVideos()
     {
+        ActivateMsg();
         if (player1) player1.externallyTriggerVideo = true;
         yield return new WaitForSeconds(waitAfterVideoLength);
         if(player2)player2.externallyTriggerVideo = true;
 
+    }
+    public void ActivateMsg()
+    {
+        msgGameObject.gameObject.SetActive(true);
+        msgGameObject.GetComponent<Animator>().SetTrigger("fadeIn");
     }
 }

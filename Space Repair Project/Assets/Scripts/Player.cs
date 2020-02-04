@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     static GameObject _player;
     static Player _Player;
 
-    [SerializeField] winCondition condition;
+    [SerializeField] reactorBrinProof reactor;
 
     public static Player PlayerSc {
         get { return _Player; }
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (condition.winGame)
+        if (reactor.reactorRepaired)
         {
             won = true;
         }

@@ -137,7 +137,7 @@ AnimationClip:
       value: {fileID: 21300000, guid: e513b6952150f5145a5797d39795b749, type: 3}
     - time: 4.125
       value: {fileID: 21300000, guid: 599f7cce539636244aca19f05cde7a19, type: 3}
-    - time: 5
+    - time: 7
       value: {fileID: 21300000, guid: 599f7cce539636244aca19f05cde7a19, type: 3}
     - time: 1.6666666
       value: {fileID: 21300000, guid: fcdfa7afacab295468bee80e2e09d72d, type: 3}
@@ -245,7 +245,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 5
+    m_StopTime: 3.1666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -338,11 +338,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 5
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

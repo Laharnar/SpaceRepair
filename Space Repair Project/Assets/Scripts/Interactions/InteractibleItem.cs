@@ -34,7 +34,7 @@ public class InteractibleItem:MonoBehaviour {
             else
             {
                 somethingCanInteract = true;
-                inputSource.OnItemEnterRange(this);
+//                inputSource.OnItemEnterRange(this);
             }
             
         }
@@ -53,7 +53,7 @@ public class InteractibleItem:MonoBehaviour {
         if(collision.transform.root.gameObject == Player.playerGo)
         {
             somethingCanInteract = false;
-            inputSource.OnItemExitRange(this);
+//            inputSource.OnItemExitRange(this);
         }
     }
 

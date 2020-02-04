@@ -13,6 +13,7 @@ public class MoviePlayer : MonoBehaviour
     public bool disableOnReload = false;
     public bool skipOnEsc = false;
     public PlaySoundOnTimer sound;
+    public GameObject skipText = null;
 
     private void Start()
     {
@@ -31,18 +32,22 @@ public class MoviePlayer : MonoBehaviour
         {
             movie.Stop();
             if (sound) sound.PlaySoundFx();
+            skipText.SetActive(false);
         }
         if (disableOnDone && Time.timeSinceLevelLoad > vidLen)
         {
             //movie.targetCamera = null;
             if(!movie.isPlaying)
                 movie.Stop();
+                skipText.SetActive(false);
         }
         if (testMode && Input.GetKeyDown(KeyCode.Space))
         {
             if (movie.isPlaying)
             {
                 movie.Stop();
+                skipText.SetActive(false);
+
             }
             else
             {
@@ -55,6 +60,8 @@ public class MoviePlayer : MonoBehaviour
             if (movie.isPlaying)
             {
                 movie.Stop();
+                skipText.SetActive(false);
+
             }
             else
             {
@@ -73,7 +80,8 @@ public class MoviePlayer : MonoBehaviour
             playOnStart = false;
             //movie.targetCamera = null;
             externallyTriggerVideo = false;
-            if (sound) sound.Stop();
+            if (sound) sound.Stop(); skipText.SetActive(false);
+            
         }
     }
 }
