@@ -35,11 +35,12 @@ public class winCondition : MonoBehaviour
         }
         if (levi.allActivated && desni.allActivated && spodnji.allActivated)
         {
-            reactor.canBeFilled = true;
-        }
-        if (reactor.isFilled)
-        {
+            //reactor.canBeFilled = true;
             winGame = true;
         }
+        /*if (reactor.isFilled)
+        {
+            winGame = true;
+        }*/
     }
 }
