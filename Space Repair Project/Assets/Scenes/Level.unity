@@ -1414,6 +1414,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579560146}
     m_Modifications:
+    - target: {fileID: 1410940476, guid: b68a1d201d3a9704281f5c62796a4b61, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 308.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791721569, guid: b68a1d201d3a9704281f5c62796a4b61, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 601484048640801956, guid: b68a1d201d3a9704281f5c62796a4b61,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1478,6 +1486,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetAudioSources.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710311378048659457, guid: b68a1d201d3a9704281f5c62796a4b61,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845502418977220145, guid: b68a1d201d3a9704281f5c62796a4b61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5968479392685892447, guid: b68a1d201d3a9704281f5c62796a4b61,
         type: 3}
@@ -7069,6 +7087,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579560146}
     m_Modifications:
+    - target: {fileID: 1994046011, guid: a298b70b66bbd1c4f88d997836ea4d2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 245994641736526948, guid: a298b70b66bbd1c4f88d997836ea4d2f,
+        type: 3}
+      propertyPath: skipText
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9151093108672256564, guid: a298b70b66bbd1c4f88d997836ea4d2f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15743,7 +15770,7 @@ PrefabInstance:
     - target: {fileID: 2920051662647151456, guid: 9d6fc315e80d8f941a5b1f106b6d7742,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5279124469780975445, guid: 9d6fc315e80d8f941a5b1f106b6d7742,
         type: 3}
@@ -15760,6 +15787,11 @@ PrefabInstance:
       propertyPath: videoName
       value: Winn screen
       objectReference: {fileID: 0}
+    - target: {fileID: 6106747382142929252, guid: 9d6fc315e80d8f941a5b1f106b6d7742,
+        type: 3}
+      propertyPath: skipText
+      value: 
+      objectReference: {fileID: 1142385204}
     - target: {fileID: 6921563468802214944, guid: 9d6fc315e80d8f941a5b1f106b6d7742,
         type: 3}
       propertyPath: m_AnchoredPosition.y
