@@ -5,10 +5,10 @@ using UnityEngine;
 public class winCondition : MonoBehaviour
 {
 
-    [SerializeField] collection levi;
-    [SerializeField] collection spodnji;
-    [SerializeField] collection desni;
-    [SerializeField] Reactor reactor;
+    [SerializeField] collection levi = default;
+    [SerializeField] collection spodnji = default;
+    [SerializeField] collection desni = default;
+    [SerializeField] Reactor reactor = default;
 
     public bool winGame = false;
     public float percentageDone;

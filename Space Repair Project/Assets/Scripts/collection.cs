@@ -14,7 +14,7 @@ public class collection : MonoBehaviour
     void Start()
     {
         buttonNum = buttonsThatNeedToBeActive.Count;
-        print(buttonNum);
+        //print(buttonNum);
     }
 
     // Update is called once per frame

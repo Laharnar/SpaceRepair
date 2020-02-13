@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class reactorBrinProof : MonoBehaviour
 {
-    [SerializeField] GameObject reactorActive;
-    [SerializeField] GameObject reactorSelected;
-    [SerializeField] GameObject reactorBroken;
+    [SerializeField] GameObject reactorActive = default;
+    [SerializeField] GameObject reactorSelected = default;
+    [SerializeField] GameObject reactorBroken = default;
     
 
     [SerializeField] private int stage = 1;
-    [SerializeField] winCondition winCondition;
+    [SerializeField] winCondition winCondition = default;
     public bool reactorRepaired = false;
     private bool won = false;
     private string txt = "Press 'Space' to repair the Power Reactor";
