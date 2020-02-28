@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 448095008, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.4
+      value: 2.81
       objectReference: {fileID: 0}
     - target: {fileID: 448095008, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: m_LocalScale.z
@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448095008, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.41
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 448095008, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: m_LocalRotation.z
@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448095008, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 448095008, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42,6 +42,10 @@ PrefabInstance:
     - target: {fileID: 921071959, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: rotateConstantlyBy.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1500484666, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
+      propertyPath: loseDistance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2094500739, guid: 3b762b13884d8c048a39b0696c2e1103, type: 3}
       propertyPath: m_LocalScale.x
@@ -66,6 +70,11 @@ PrefabInstance:
       propertyPath: boolAnimation
       value: slime
       objectReference: {fileID: 0}
+    - target: {fileID: 620891586843252998, guid: 3b762b13884d8c048a39b0696c2e1103,
+        type: 3}
+      propertyPath: angryOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1335886251650734663, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
       propertyPath: m_Enabled
@@ -79,17 +88,17 @@ PrefabInstance:
     - target: {fileID: 2869603648263194451, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.06
+      value: 20.053448
       objectReference: {fileID: 0}
     - target: {fileID: 2869603648263194451, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: -5.545549
       objectReference: {fileID: 0}
     - target: {fileID: 2869603648263194451, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.04296875
+      value: 0.3203125
       objectReference: {fileID: 0}
     - target: {fileID: 2869603648263194451, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
@@ -165,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 2869603648263194457, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
       propertyPath: m_Constraints
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2869603648263194458, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
@@ -175,12 +184,12 @@ PrefabInstance:
     - target: {fileID: 2869603648263194459, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
       propertyPath: m_Name
-      value: sleepyslime
+      value: Sleeper1
       objectReference: {fileID: 0}
     - target: {fileID: 2869603648263194459, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5900023286085290500, guid: 3b762b13884d8c048a39b0696c2e1103,
         type: 3}
